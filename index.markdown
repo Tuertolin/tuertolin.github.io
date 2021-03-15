@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+This is the home site !
+-- 
+
+... which is shown in the screenshot below:
+![My helpful screenshot](/docs/docs_assets/SysOps.png)
