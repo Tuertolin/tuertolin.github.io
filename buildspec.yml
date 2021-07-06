@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - gem install bundler
-      - curl -sL  https://deb.nodesource.com/setup_14.x | -E bash -
+      - curl -sL  https://deb.nodesource.com/setup_14.x
       - apt-get install nodejs
       - bundle install
   build:
