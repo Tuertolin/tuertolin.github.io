@@ -11,5 +11,5 @@ phases:
   build:
     commands:
       - bundle exec jekyll build
-      - aws s3 sync --delete _site/ s3://doc.tuertolin.com
+      - aws s3 sync --delete _site/ s3://doc.tuertolin.com --acl bucket-owner-full-control
       - aws cloudfront create-invalidation --distribution-id E2V5UBJ2BX66LN --paths '/*'
