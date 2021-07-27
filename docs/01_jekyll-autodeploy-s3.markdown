@@ -32,7 +32,8 @@ Remember that the bucket name needs to be a DNS-compliant name.
     - Hosting type: Host a static website
     - Index document: index.html 
 
-After enabling the s3 static website hosting,  
+After enabling the s3 static website hosting, please asve the Bucket website endpoint, we will need it later for configuring your CloudFront ditribution. When you configure your bucket as a static website, the website is available at the AWS Region-specific website endpoint of the bucket. For example:
+http://yourbucketname.s3-website-ap-southeast-2.amazonaws.com
 
 ![S3 Static Website hosting](/docs/docs_assets/deployment/Jekyll-autodeploy-to-AWS_02.jpg)
 
@@ -69,7 +70,28 @@ After enabling the s3 static website hosting,
 }
 ```
 
-With that, your bucket now has 
+With that, your bucket now has public access. If you copy any index.html file into the root of your bucket, you will be able to browse it when you hit your website bucket endpoing (The one that you copied on step 2).
+Just for testing purpose, create an index.html file by using any text editor, and then upload the file into your s3 bucket.
+
+```
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body>
+    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+  </body>
+</html>
+```
+
+You should be able to browse it as the below image:
+
+![s3 bucket with host static website](/docs/docs_assets/deployment/Jekyll-autodeploy-to-AWS_03.jpg)
+
+
+
+
 
 `stat -c "%a %n" filename` Shows the numeric code for the file permissions 
 
