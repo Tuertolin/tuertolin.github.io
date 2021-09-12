@@ -68,3 +68,15 @@ One WCU represents one write per second for an item up to 1 KB size. Here, we ar
 1. **Introduction**
 
 https://aws.amazon.com/blogs/compute/sharing-secrets-with-aws-lambda-using-aws-systems-manager-parameter-store/
+
+## API Gateway
+
+1. **Links to read**
+
+https://aws.amazon.com/premiumsupport/knowledge-center/api-gateway-cors-errors/
+
+https://aws.amazon.com/blogs/aws/new-usage-plans-for-amazon-api-gateway/
+
+https://aws.amazon.com/premiumsupport/knowledge-center/support-case-browser-har-file/
+
+https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html

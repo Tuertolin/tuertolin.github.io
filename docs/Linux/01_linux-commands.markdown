@@ -18,6 +18,10 @@ Below you will find useful Linux commands.
 
 `systemctl list-unit-files | grep enabled` - Similar command than above
 
+`sudo chown tuertolin:tuertolin /var/www/` - Change folder permissions from root or previous owner to tuertolin user group.
+
+`sudo chown -R tuertolin:tuertolin /var/www/` - This command gives someone the ownership of the directory tsfiles, and all files and subfolders. The -R stands for recursive, which transfers ownership of all sub directories to the new owner.
+
 AWK Searching command in s3 log bucket
 --
 Listing
